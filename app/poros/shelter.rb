@@ -1,7 +1,8 @@
 class Shelter
-  attr_reader :name, :provider, :address, :city, :state, :zipcode, :full_address, :type, :sub_type, :number_of_beds, :lgbtq_focused, :ages_served, :how_to_access, :onsite_medical_clinic, :website
+  attr_reader :id, :name, :provider, :address, :city, :state, :zipcode, :full_address, :type, :sub_type, :number_of_beds, :lgbtq_focused, :ages_served, :how_to_access, :onsite_medical_clinic, :website
 
   def initialize(data)
+    @id = data[:attributes][:OBJECTID]
     @name = data[:attributes][:NAME]
     @provider = data[:attributes][:PROVIDER]
     @address = data[:attributes][:ADDRESS]
