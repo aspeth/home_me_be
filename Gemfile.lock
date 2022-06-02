@@ -66,6 +66,13 @@ GEM
     diff-lcs (1.5.0)
     docile (1.4.0)
     erubi (1.10.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (2.21.0)
+      i18n (>= 1.8.11, < 2)
     faraday (2.3.0)
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
@@ -93,9 +100,13 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.2)
     nio4r (2.5.8)
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     nokogiri (1.13.6-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
@@ -195,12 +206,15 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  ruby
   x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   byebug
   capybara
+  factory_bot_rails
+  faker
   faraday
   figaro
   jsonapi-serializer
