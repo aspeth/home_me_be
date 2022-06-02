@@ -30,14 +30,14 @@ jobs:
     build:
         working_directory: ~/home_me_be
         docker:
-            - image: circleci/ruby:2.7.4
+            image: circleci/ruby:2.7.4
             environment:
                 RAILS_ENV: test
     steps:
-        - checkout
+        checkout
 
       # Setup the environment
-      - run: cp .sample.env .env
+      run: cp .sample.env .env
 
       # Run the tests
-      - run: bundle exec rake
+      run: bundle exec rake
