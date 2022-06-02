@@ -1,3 +1,5 @@
+require "./app/poros/shelter"
+
 class ShelterFacade
   def self.get_all_shelters
     shelters = ShelterService.get_all_shelters

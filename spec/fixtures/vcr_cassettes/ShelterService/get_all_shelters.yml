@@ -39,7 +39,7 @@ http_interactions:
       Set-Cookie:
       - BIGipServerpool_maps2.dcgis.dc.gov_443=2148815370.47873.0000; path=/; Httponly;
         Secure
-      - TS01523410=01448d53dff2585a9053c8c504caea7c4d3b198a300d697d323b89be7455fddf350813f4dc90d07f08fb108b4f49f24dd199ab2cd7dbe2577464491f57afc1dfda1408ec31;
+      - TS01523410=01448d53df244afa20183d50ccde20bb09fdc68f6efdb8b00b26a51541d612b759272f4fd995d002e480eb98ff05d06d3c198008a47d11671b88810baee9ca696390b83cd9;
         Path=/
     body:
       encoding: ASCII-8BIT
