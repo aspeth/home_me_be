@@ -65,7 +65,9 @@ jobs:
           name: Database setup
           command: bundle exec rails db:create
       # Run rspec in parallel
-      - ruby/rspec-test
+      - run:
+          name: run tests
+          command: ruby/rspec-test --format RspecJunitFormatter --out rspec.xml
 
       # Run the tests
-      - run: bundle exec rspec --format RspecJunitFormatter --out rspec.xml
+      # - run: bundle exec rspec 
