@@ -4,15 +4,15 @@ jobs:
     working_directory: ~/home_me_be
     docker:
       - image: circleci/ruby:2.7.4
-        environment:
-          PGHOST: localhost
-          PGUSER: home_me_be
-          RAILS_ENV: test
-      - image: postgres:9.5
-        environment:
-          POSTGRES_USER: home_me_be
-          POSTGRES_DB: home_me_be_test
-          POSTGRES_PASSWORD: ""
+      #   environment:
+      #     PGHOST: localhost
+      #     PGUSER: home_me_be
+      #     RAILS_ENV: test
+      # - image: postgres:9.5
+      #   environment:
+      #     POSTGRES_USER: home_me_be
+      #     POSTGRES_DB: home_me_be_test
+      #     POSTGRES_PASSWORD: ""
     steps:
       - checkout
 
