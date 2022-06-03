@@ -1,11 +1,11 @@
 require "./app/poros/direction"
 
-class DirectionFacade
+class DirectionsFacade
   def self.get_all_directions(start_address, end_address)
     directions = DirectionsService.get_all_directions(start_address, end_address)
 
-    directions.map do |direction|
-      Directions.new(directions)
+    directions[:routes][0][:legs][0][:steps].map do |direction|
+      Direction.new(direction[:html_instructions])
     end
   end
 end
