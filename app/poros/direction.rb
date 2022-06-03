@@ -1,8 +1,9 @@
 class Direction
-  attr_reader :directions
+  attr_reader :id, :directions
 
   def initialize(data)
-    @directions = data
+    @id = nil
+    @directions = data[:html_instructions]
   end
 end
 
