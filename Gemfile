@@ -33,6 +33,7 @@ gem 'figaro'
 gem 'jsonapi-serializer'
 gem 'simplecov'
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -42,6 +43,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'rspec_junit_formatter'
 end
 
 group :development do
