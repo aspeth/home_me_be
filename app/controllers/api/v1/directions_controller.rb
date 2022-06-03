@@ -1,7 +1,7 @@
 class Api::V1::DirectionsController < ApplicationController
   def index
     directions = DirectionsFacade.get_all_directions(params[:origin], params[:destination])
-    render json: DirectionsSerializer.new(directions)#.serialized_json
+    render json: DirectionsSerializer.new(directions)
   end
 end
 
