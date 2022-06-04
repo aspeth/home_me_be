@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe DirectionsFacade, :vcr do
+RSpec.describe DirectionsFacade do
   describe "directions" do
-    it "returns an array of all directions" do
+    it "returns an array of all directions", :vcr do
       start_address = "4326 14th Street NW Washington, DC 20011"
       end_address = "6010 Georgia Ave., NW Washington, DC 20011"
       directions = DirectionsFacade.get_all_directions(start_address, end_address)
