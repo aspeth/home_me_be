@@ -41,7 +41,7 @@ require 'rails_helper'
       expect(direction[:attributes][:directions]).to be_a(String)
     end
   end
-  
+
   it "sends a list of directions from given zipcode and shelter end point", :vcr do
 
     get "/api/v1/directions?destination=6010 Georgia Ave., NW Washington, DC 20011&origin=20011&key=#{ENV['google_maps_key']}"
@@ -65,7 +65,7 @@ require 'rails_helper'
   it "sends an error when no origin is given with a shelter end point", :vcr do
 
     get "/api/v1/directions?destination=6010 Georgia Ave., NW Washington, DC 20011&origin=&key=#{ENV['google_maps_key']}"
-
+    
     # response_body = JSON.parse(response.body, symbolize_names: true)
     # directions = response_body[:data]
 
