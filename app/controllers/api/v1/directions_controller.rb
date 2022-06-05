@@ -1,7 +1,11 @@
 class Api::V1::DirectionsController < ApplicationController
   def index
     directions = DirectionsFacade.get_all_directions(params[:origin], params[:destination])
-    render json: DirectionsSerializer.new(directions)
+    if params[:origin] != ""
+      render json: DirectionsSerializer.new(directions)
+    else
+      render json: directions, status: 400
+    end
   end
 end
 
