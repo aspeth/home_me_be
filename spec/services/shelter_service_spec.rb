@@ -17,4 +17,12 @@ RSpec.describe ShelterService do
     expect(shelters.first).to be_a(Hash)
     expect(shelters.first).to have_key(:attributes)
   end
+
+  it "gets a shelter by id", :vcr do
+
+    shelter = ShelterService.get_shelter_by_id(1)
+
+    expect(shelter).to be_an(Array)
+    expect(shelter[0]).to have_key(:attributes)
+  end
 end
