@@ -8,4 +8,13 @@ RSpec.describe ShelterService do
     expect(shelters.first).to be_a(Hash)
     expect(shelters.first).to have_key(:attributes)
   end
+
+  it "gets all shelters by zipcode", :vcr do
+
+    shelters = ShelterService.get_shelters_by_zipcode("20011")
+
+    expect(shelters).to be_an(Array)
+    expect(shelters.first).to be_a(Hash)
+    expect(shelters.first).to have_key(:attributes)
+  end
 end
