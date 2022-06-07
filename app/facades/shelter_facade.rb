@@ -8,4 +8,12 @@ class ShelterFacade
       Shelter.new(shelter)
     end
   end
+
+  def self.get_shelters_by_zipcode(zipcode)
+    shelters = ShelterService.get_shelters_by_zipcode(zipcode)
+    
+    shelters.map do |shelter|
+      Shelter.new(shelter)
+    end
+  end
 end

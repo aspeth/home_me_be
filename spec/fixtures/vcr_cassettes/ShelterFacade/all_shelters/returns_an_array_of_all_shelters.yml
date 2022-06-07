@@ -33,13 +33,13 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       Date:
-      - Sat, 04 Jun 2022 00:25:46 GMT
+      - Tue, 07 Jun 2022 20:17:03 GMT
       Content-Length:
       - '4071'
       Set-Cookie:
       - BIGipServerpool_maps2.dcgis.dc.gov_443=2148815370.47873.0000; path=/; Httponly;
         Secure
-      - TS01523410=01448d53dfb810e0fc5c05ee7c290c1153e17e986b28c7cd4b238215cb7d4f1b766e2ad54bd8509385581cb18ec22d0cd0b5e58c415c463e88f62af626799b1c17fe1637df;
+      - TS01523410=01448d53df25ff2f7616c50e696b3c66de1c4139954c812bd5e214f6737885c18c96440909eccf6080c0b1fd0d18c236c3bef95101181e158e45718ebf559d26e4e80dfed7;
         Path=/
     body:
       encoding: ASCII-8BIT
@@ -123,5 +123,5 @@ http_interactions:
         1","TYPE":"Transitional","SUBTYPE":"Men","STATUS":"Active","NUMBER_OF_BEDS":22.0,"ON_SITE_MEDICAL_CLINIC":null,"DGS_CONFIRMED":null,"DHS_CONFIRMED":"Yes","ALREADY_PUBLIC_INFORMATION":"Yes","LAST_UPDATED_BY_DHS":1510722000000,"PUBLISH_TO_ODP":"Yes","AGES_SERVED":"18+","HOW_TO_ACCESS":"Coordinated
         Assessment & Housing Placement (CAHP) Process","LGBTQ_FOCUSED":null,"XCOORD":"398462.96","YCOORD":"138534.21","NAME":"Mickey
         Leland House","ZIPCODE":"20001","WEB_URL":"http://www.dccfh.org/programs/housing/mickey-leland-house","MAR_ID":"218238","GIS_ID":"HomelessShelterPt_8","GLOBALID":"{E9532D5B-1C2D-4434-B229-BCF4CCBB15BC}","CREATOR":null,"CREATED":null,"EDITOR":null,"EDITED":null},"geometry":{"x":-77.017725228921933,"y":38.914680218783396}}]}'
-  recorded_at: Sat, 04 Jun 2022 00:25:46 GMT
+  recorded_at: Tue, 07 Jun 2022 20:17:04 GMT
 recorded_with: VCR 6.1.0
