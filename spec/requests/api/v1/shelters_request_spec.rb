@@ -121,4 +121,24 @@ RSpec.describe 'shelters api' do
         expect(shelter[:attributes][:website]).to be_a(String)
     end
   end
+
+  it 'gives an error message if no zipcode is entered', :vcr do
+
+    get "/api/v1/shelters?ZIPCODE="
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response_body[:data][:message]).to eq("No match found")
+    expect(status).to be 400
+  end
+
+  it 'gives an error message if incorrect zipcode is entered', :vcr do
+
+    get "/api/v1/shelters?ZIPCODE=123"
+
+    response_body = JSON.parse(response.body, symbolize_names: true)
+
+    expect(response_body[:data][:message]).to eq("No match found")
+    expect(status).to be 400
+  end
 end

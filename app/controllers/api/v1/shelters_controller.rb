@@ -5,7 +5,11 @@ class Api::V1::SheltersController < ApplicationController
       render json: ShelterSerializer.new(shelters)
     else
       shelters = ShelterFacade.get_shelters_by_zipcode(params[:ZIPCODE])
-      render json: ShelterSerializer.new(shelters)
+      if shelters != []
+        render json: ShelterSerializer.new(shelters)
+      else
+        render json: { data: { message: "No match found" } }, status: 400
+      end
     end
   end
 end
