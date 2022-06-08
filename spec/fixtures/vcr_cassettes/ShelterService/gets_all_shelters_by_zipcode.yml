@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/25/query?f=json&outFields=*&outSR=4326&where=ZIPCODE%20=%20%2720011%27
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - public, must-revalidate, max-age=0
+      Content-Type:
+      - application/json;charset=UTF-8
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Etag:
+      - '"d1ae40eb"'
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Date:
+      - Wed, 08 Jun 2022 17:13:22 GMT
+      Content-Length:
+      - '1504'
+      Set-Cookie:
+      - BIGipServerpool_maps2.dcgis.dc.gov_443=2148815370.47873.0000; path=/; Httponly;
+        Secure
+      - TS01523410=01448d53dfd9ac211fa86a7a6a5f17903f8ce0cf639e5169b88a8ad33f5e2be53279b6736f0f733194fc29398661215503601d392c1fbaf973e8e8b5e9edd890b8f8dc0842;
+        Path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"displayFieldName":"NAME","fieldAliases":{"OBJECTID":"OBJECTID","OWNER_RENTER":"OWNER_RENTER","PROVIDER":"PROVIDER","ADDRESS":"ADDRESS","CITY":"CITY","STATE":"STATE","LATITUDE":"LATITUDE","LONGITUDE":"LONGITUDE","WARD":"WARD","TYPE":"TYPE","SUBTYPE":"SUBTYPE","STATUS":"STATUS","NUMBER_OF_BEDS":"NUMBER_OF_BEDS","ON_SITE_MEDICAL_CLINIC":"ON_SITE_MEDICAL_CLINIC","DGS_CONFIRMED":"DGS_CONFIRMED","DHS_CONFIRMED":"DHS_CONFIRMED","ALREADY_PUBLIC_INFORMATION":"ALREADY_PUBLIC_INFORMATION","LAST_UPDATED_BY_DHS":"LAST_UPDATED_BY_DHS","PUBLISH_TO_ODP":"PUBLISH_TO_ODP","AGES_SERVED":"AGES_SERVED","HOW_TO_ACCESS":"HOW_TO_ACCESS","LGBTQ_FOCUSED":"LGBTQ_FOCUSED","XCOORD":"XCOORD","YCOORD":"YCOORD","NAME":"NAME","ZIPCODE":"ZIPCODE","WEB_URL":"WEB_URL","MAR_ID":"MAR
+        ID","GIS_ID":"GIS_ID","GLOBALID":"GLOBALID","CREATOR":"CREATOR","CREATED":"CREATED","EDITOR":"EDITOR","EDITED":"EDITED"},"geometryType":"esriGeometryPoint","spatialReference":{"wkid":4326,"latestWkid":4326},"fields":[{"name":"OBJECTID","type":"esriFieldTypeOID","alias":"OBJECTID"},{"name":"OWNER_RENTER","type":"esriFieldTypeString","alias":"OWNER_RENTER","length":255},{"name":"PROVIDER","type":"esriFieldTypeString","alias":"PROVIDER","length":255},{"name":"ADDRESS","type":"esriFieldTypeString","alias":"ADDRESS","length":255},{"name":"CITY","type":"esriFieldTypeString","alias":"CITY","length":255},{"name":"STATE","type":"esriFieldTypeString","alias":"STATE","length":255},{"name":"LATITUDE","type":"esriFieldTypeDouble","alias":"LATITUDE"},{"name":"LONGITUDE","type":"esriFieldTypeDouble","alias":"LONGITUDE"},{"name":"WARD","type":"esriFieldTypeString","alias":"WARD","length":255},{"name":"TYPE","type":"esriFieldTypeString","alias":"TYPE","length":255},{"name":"SUBTYPE","type":"esriFieldTypeString","alias":"SUBTYPE","length":255},{"name":"STATUS","type":"esriFieldTypeString","alias":"STATUS","length":255},{"name":"NUMBER_OF_BEDS","type":"esriFieldTypeDouble","alias":"NUMBER_OF_BEDS"},{"name":"ON_SITE_MEDICAL_CLINIC","type":"esriFieldTypeString","alias":"ON_SITE_MEDICAL_CLINIC","length":255},{"name":"DGS_CONFIRMED","type":"esriFieldTypeString","alias":"DGS_CONFIRMED","length":255},{"name":"DHS_CONFIRMED","type":"esriFieldTypeString","alias":"DHS_CONFIRMED","length":255},{"name":"ALREADY_PUBLIC_INFORMATION","type":"esriFieldTypeString","alias":"ALREADY_PUBLIC_INFORMATION","length":255},{"name":"LAST_UPDATED_BY_DHS","type":"esriFieldTypeDate","alias":"LAST_UPDATED_BY_DHS","length":8},{"name":"PUBLISH_TO_ODP","type":"esriFieldTypeString","alias":"PUBLISH_TO_ODP","length":255},{"name":"AGES_SERVED","type":"esriFieldTypeString","alias":"AGES_SERVED","length":255},{"name":"HOW_TO_ACCESS","type":"esriFieldTypeString","alias":"HOW_TO_ACCESS","length":255},{"name":"LGBTQ_FOCUSED","type":"esriFieldTypeString","alias":"LGBTQ_FOCUSED","length":255},{"name":"XCOORD","type":"esriFieldTypeString","alias":"XCOORD","length":50},{"name":"YCOORD","type":"esriFieldTypeString","alias":"YCOORD","length":50},{"name":"NAME","type":"esriFieldTypeString","alias":"NAME","length":255},{"name":"ZIPCODE","type":"esriFieldTypeString","alias":"ZIPCODE","length":255},{"name":"WEB_URL","type":"esriFieldTypeString","alias":"WEB_URL","length":255},{"name":"MAR_ID","type":"esriFieldTypeString","alias":"MAR
+        ID","length":255},{"name":"GIS_ID","type":"esriFieldTypeString","alias":"GIS_ID","length":50},{"name":"GLOBALID","type":"esriFieldTypeGlobalID","alias":"GLOBALID","length":38},{"name":"CREATOR","type":"esriFieldTypeString","alias":"CREATOR","length":255},{"name":"CREATED","type":"esriFieldTypeDate","alias":"CREATED","length":8},{"name":"EDITOR","type":"esriFieldTypeString","alias":"EDITOR","length":255},{"name":"EDITED","type":"esriFieldTypeDate","alias":"EDITED","length":8}],"features":[{"attributes":{"OBJECTID":1,"OWNER_RENTER":"Catholic
+        Charities","PROVIDER":"Catholic Charities","ADDRESS":"6010 Georgia Ave., NW","CITY":"Washington","STATE":"DC","LATITUDE":38.96335141,"LONGITUDE":-77.02830252,"WARD":"Ward
+        4","TYPE":"Low Barrier","SUBTYPE":"Women","STATUS":"Active","NUMBER_OF_BEDS":25.0,"ON_SITE_MEDICAL_CLINIC":null,"DGS_CONFIRMED":null,"DHS_CONFIRMED":"Yes","ALREADY_PUBLIC_INFORMATION":"Yes","LAST_UPDATED_BY_DHS":1510722000000,"PUBLISH_TO_ODP":"Yes","AGES_SERVED":"18+","HOW_TO_ACCESS":"Show
+        Up and/or Call Shelter Hotline (311)","LGBTQ_FOCUSED":null,"XCOORD":"397547.11","YCOORD":"143938.2","NAME":"Nativity
+        Shelter for Women","ZIPCODE":"20011","WEB_URL":"https://www.catholiccharitiesdc.org/nativity/","MAR_ID":"308177","GIS_ID":"HomelessShelterPt_1","GLOBALID":"{453EC7E8-81EB-4C02-B866-78996813ABD2}","CREATOR":null,"CREATED":null,"EDITOR":null,"EDITED":null},"geometry":{"x":-77.028304820744509,"y":38.963358873102905}},{"attributes":{"OBJECTID":2,"OWNER_RENTER":"Coalition
+        for the Homeless","PROVIDER":"Coalition for the Homeless","ADDRESS":"4326
+        14th Street NW","CITY":"Washington","STATE":"DC","LATITUDE":38.94384718,"LONGITUDE":-77.03300118,"WARD":"Ward
+        4","TYPE":"Transitional","SUBTYPE":"Men","STATUS":"Active","NUMBER_OF_BEDS":12.0,"ON_SITE_MEDICAL_CLINIC":null,"DGS_CONFIRMED":null,"DHS_CONFIRMED":"Yes","ALREADY_PUBLIC_INFORMATION":"Yes","LAST_UPDATED_BY_DHS":1510722000000,"PUBLISH_TO_ODP":"Yes","AGES_SERVED":"18+","HOW_TO_ACCESS":"Coordinated
+        Assessment & Housing Placement (CAHP) Process","LGBTQ_FOCUSED":null,"XCOORD":"397139.11","YCOORD":"141773.19","NAME":"The
+        Webster House","ZIPCODE":"20011","WEB_URL":"http://www.dccfh.org/programs/housing/the-webster-house","MAR_ID":"259286","GIS_ID":"HomelessShelterPt_2","GLOBALID":"{D271432C-8CA8-4C02-836A-77704207EEE8}","CREATOR":null,"CREATED":null,"EDITOR":null,"EDITED":null},"geometry":{"x":-77.033003473544923,"y":38.943854645715803}}]}'
+  recorded_at: Wed, 08 Jun 2022 17:13:23 GMT
+recorded_with: VCR 6.1.0
