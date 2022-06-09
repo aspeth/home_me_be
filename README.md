@@ -3,7 +3,7 @@
 + This API was built in conjunction with the [home_me_fe](https://github.com/CLRM1/home_me_fe) Front End application.
 
 ## Available Endpoints - Postman Collection
-* [Click this link](https://www.getpostman.com/collections/76244f724057de8a5c13)
+* [Click this link](https://www.getpostman.com/collections/03352a860b564709d906)
 * Copy the entire text
 * Open Postman, select "Import", then "Raw text"
 * Past the entire text
