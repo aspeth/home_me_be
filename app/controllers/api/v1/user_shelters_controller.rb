@@ -20,7 +20,6 @@ class Api::V1::UserSheltersController < ApplicationController
     user_id = params[:user_id]
     shelter_id = params[:shelter_id]
     user_shelter = UserShelter.find_by(user_id: user_id, shelter_id: shelter_id)
-    # require 'pry'; binding.pry
     user_shelter.destroy
     redirect_to "/api/v1/users/#{user_id}/shelters"
   end
