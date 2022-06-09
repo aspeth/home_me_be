@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Shelter do
+RSpec.describe ShelterPoro do
   it "exists", :vcr do
     data = {attributes: { id: 1,
                           name: "Helpful Shelter",
@@ -18,8 +18,8 @@ RSpec.describe Shelter do
                           onsite_medical_clinic: true,
                           website: "helpfulshelter.org"}}
 
-    shelter = Shelter.new(data)
+    shelter = ShelterPoro.new(data)
 
-    expect(shelter).to be_an_instance_of(Shelter)
+    expect(shelter).to be_an_instance_of(ShelterPoro)
   end
 end
