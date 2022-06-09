@@ -38,7 +38,14 @@ RSpec.describe "user shelters API" do
     expect(user1.shelters).to eq([shelter1, shelter2, shelter3])
     expect(user2.shelters).to eq([shelter4])
 
-    # response
+    shelters = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    shelters.each do |shelter|
+      expect(shelter).to have_key(:id)
+      expect(shelter).to have_key(:type)
+      expect(shelter[:type]).to eq("shelter_database")
+      expect(shelter).to have_key(:attributes)
+    end
   end
   
   it "can remove saved shelters" do
@@ -59,5 +66,11 @@ RSpec.describe "user shelters API" do
     expect(user1.shelters.first[:name]).to eq("Popp's Sandbox")
     expect(user1.shelters.second[:name]).to eq("Margo's Froyo")
     expect(user2.shelters.first[:name]).to eq("Pete's Kitchen")
+  end
+
+  it "sad path - bad user id" do
+    get "/api/v1/users/3000/shelters"
+
+    expect(response.status).to eq(400)
   end
 end

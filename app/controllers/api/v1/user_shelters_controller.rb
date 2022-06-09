@@ -1,8 +1,12 @@
 class Api::V1::UserSheltersController < ApplicationController
   def index
     user = User.find_by(id: params[:id])
-    shelters = user.shelters
-    render json: ShelterDatabaseSerializer.new(shelters)
+    if !user.nil?
+      shelters = user.shelters
+      render json: ShelterDatabaseSerializer.new(shelters)
+    else
+      render json: { data: { message: "No match found" } }, status: 400
+    end
   end
 
   def create
