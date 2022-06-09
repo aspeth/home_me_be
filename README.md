@@ -15,7 +15,7 @@
 * Rails - 5.2.7
 
 ## DB Schema
-![schema](app/assets/images/Screen Shot 2022-06-09 at 10.48.53 AM.png)
+<img width="599" alt="Screen Shot 2022-06-09 at 10 48 53 AM" src="https://user-images.githubusercontent.com/96926479/172904677-29915e82-53b1-4817-b5e2-f38a40d5b23a.png">
 
 ## Contributors
 #### Back End Team
