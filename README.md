@@ -4,6 +4,13 @@
 
 ## Postman Test Suite
 https://www.getpostman.com/collections/76244f724057de8a5c13
+###To run the tests:
+* Click the link above
+* Copy the entire text
+* Open Postman, select "Import", then "Raw text"
+* Past the entire text
+* Click "Continue", then "Import"
+* Check out the endpoint examples - we have calls to the external APIs consumed by our app, as well as demonstrations of the responses returned from our own API endpoints!
 
 ## Available Endpoints
  + base '/api/v1'
