@@ -22,7 +22,7 @@ RSpec.describe "user shelters API" do
   end
 
   it "can display saved shelters index for a given user" do
-    user1 = User.create!(name: "Carl", email: "carl@catmail.com")
+    user1 = User.create!(name: "Riley", email: "riley@dogmail.com")
     user2 = User.create!(name: "Popp", email: "popp@catmail.com")
     shelter1 = Shelter.create!(name: "Carl's Castle")
     shelter2 = Shelter.create!(name: "Popp's Sandbox")
