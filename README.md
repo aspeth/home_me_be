@@ -15,7 +15,7 @@
 * Rails - 5.2.7
 
 ## DB Schema
-![Schema](app/assets/images/schema.png)
+Screen Shot 2022-06-09 at 10.48.53 AM
 
 ## Contributors
 #### Back End Team
