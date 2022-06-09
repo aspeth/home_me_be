@@ -5,7 +5,7 @@
 ## Postman Test Suite
 https://www.getpostman.com/collections/76244f724057de8a5c13
 
-###To run the tests:
+### To run the tests:
 * Click the link above
 * Copy the entire text
 * Open Postman, select "Import", then "Raw text"
