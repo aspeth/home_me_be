@@ -1,24 +1,24 @@
 # HomeMe
+## Welcome to the HomeMe API
++ This API was built in conjunction with the [home_me_fe](https://github.com/CLRM1/home_me_fe) Front End application.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Available Endpoints
+ + base '/api/v1'
+ + GET 
 
-Things you may want to cover:
+## Versions
+* Ruby Version - 2.7.4
+* Rails - 5.2.7
 
-* Ruby version
+## DB Schema
+![Schema](app/assets/images/schema.png)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Contributors
+#### Back End Team
+* [Andrew Speth](https://github.com/aspeth)
+* [Michael Hicks](https://github.com/michaeljhicks)
+* [Scott Sullivan](https://github.com/ScottSullivanltd)
+#### Front End Team
+* [Ian Ross](https://github.com/ross-ian28)
+* [Craig Cardwell](https://github.com/Eagerlearn)
+* [Chris Romero](https://github.com/CLRM1)
