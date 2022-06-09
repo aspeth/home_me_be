@@ -19,10 +19,10 @@
 
 ## Contributors
 #### Back End Team
-* Andrew Speth [Github](https://github.com/aspeth) [LinkedIn](https://www.linkedin.com/in/andrew-speth/)
-* Michael Hicks [Github](https://github.com/michaeljhicks) [LinkedIn](https://www.linkedin.com/in/michael-hicks-04218511/)
-* Scott Sullivan [Github](https://github.com/ScottSullivanltd) [LinkedIn](https://www.linkedin.com/in/scott-sullivan-9394204a/)
+* Andrew Speth [Github](https://github.com/aspeth), [LinkedIn](https://www.linkedin.com/in/andrew-speth/)
+* Michael Hicks [Github](https://github.com/michaeljhicks), [LinkedIn](https://www.linkedin.com/in/michael-hicks-04218511/)
+* Scott Sullivan [Github](https://github.com/ScottSullivanltd), [LinkedIn](https://www.linkedin.com/in/scott-sullivan-9394204a/)
 #### Front End Team
-* Ian Ross [Github](https://github.com/ross-ian28) [LinkedIn](https://www.linkedin.com/in/ross-ian28/)
-* Craig Cardwell [Github](https://github.com/Eagerlearn) [LinkedIn](https://www.linkedin.com/in/craiglcardwell/)
-* Chris Romero [Github](https://github.com/CLRM1) [LinkedIn](https://www.linkedin.com/in/chris-romero-419702122/)
+* Ian Ross [Github](https://github.com/ross-ian28), [LinkedIn](https://www.linkedin.com/in/ross-ian28/)
+* Craig Cardwell [Github](https://github.com/Eagerlearn), [LinkedIn](https://www.linkedin.com/in/craiglcardwell/)
+* Chris Romero [Github](https://github.com/CLRM1), [LinkedIn](https://www.linkedin.com/in/chris-romero-419702122/)
