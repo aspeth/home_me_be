@@ -10,29 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_02_215937) do
+ActiveRecord::Schema.define(version: 2022_06_08_171732) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "shelters", force: :cascade do |t|
-    t.integer "object_id"
     t.string "name"
-    t.string "provider"
-    t.string "address"
-    t.string "city"
-    t.string "state"
-    t.string "zipcode"
-    t.string "shelter_type"
-    t.string "sub_type"
-    t.float "number_of_beds"
-    t.boolean "lgbtq_focused"
-    t.string "ages_served"
-    t.string "how_to_access"
-    t.boolean "onsite_medical_clinic"
-    t.string "website"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_shelters", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "shelter_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shelter_id"], name: "index_user_shelters_on_shelter_id"
+    t.index ["user_id"], name: "index_user_shelters_on_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "user_shelters", "shelters"
+  add_foreign_key "user_shelters", "users"
 end

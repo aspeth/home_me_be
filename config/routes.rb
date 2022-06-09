@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       get '/shelters', to: 'shelters#index'
       get '/shelters/:id', to: 'shelters#show'
       get '/directions', to: 'directions#index'
+      get '/users/:id/shelters', to: 'user_shelters#index'
+      post '/user_shelters', to: 'user_shelters#create'
     end
   end
 

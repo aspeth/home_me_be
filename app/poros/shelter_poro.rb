@@ -1,4 +1,4 @@
-class Shelter
+class ShelterPoro
   attr_reader :id, :name, :provider, :address, :city, :state, :zipcode, :full_address, :shelter_type, :sub_type, :number_of_beds, :lgbtq_focused, :ages_served, :how_to_access, :onsite_medical_clinic, :website
 
   def initialize(data)

@@ -1,4 +1,4 @@
-require "./app/poros/direction"
+# require "./app/poros/direction"
 
 class DirectionsFacade
   def self.get_all_directions(start_address, end_address)
