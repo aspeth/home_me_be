@@ -3,7 +3,7 @@
 + This API was built in conjunction with the [home_me_fe](https://github.com/CLRM1/home_me_fe) Front End application.
 
 ## Postman Test Suite
-https://www.getpostman.com/collections/76244f724057de8a5c13
+[https://www.getpostman.com/collections/76244f724057de8a5c13](https://www.getpostman.com/collections/76244f724057de8a5c13)
 
 ## Available Endpoints
  + base '/api/v1'
