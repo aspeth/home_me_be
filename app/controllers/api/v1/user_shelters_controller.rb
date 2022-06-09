@@ -13,6 +13,7 @@ class Api::V1::UserSheltersController < ApplicationController
     shelter_id = params[:data][0][:shelter_id]
     user_id = params[:data][0][:user_id]
     UserShelter.create!(user_id: user_id, shelter_id: shelter_id)
+    render json: { data: { message: "Shelter Saved!" } }, status: 201
   end
 
   def destroy

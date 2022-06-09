@@ -19,6 +19,7 @@ RSpec.describe "user shelters API" do
 
     expect(user.shelters).to eq([shelter])
     expect(user.shelters.count).to eq(1)
+    expect(response).to have_http_status(:created)
   end
 
   it "can display saved shelters index for a given user" do
@@ -66,6 +67,7 @@ RSpec.describe "user shelters API" do
     expect(user1.shelters.first[:name]).to eq("Popp's Sandbox")
     expect(user1.shelters.second[:name]).to eq("Margo's Froyo")
     expect(user2.shelters.first[:name]).to eq("Pete's Kitchen")
+    expect(user1.shelters).to_not include("Carl's Castle")
   end
 
   it "sad path - bad user id" do
