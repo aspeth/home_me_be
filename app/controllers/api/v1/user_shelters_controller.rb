@@ -10,10 +10,12 @@ class Api::V1::UserSheltersController < ApplicationController
   end
 
   def create
-    shelter_id = params[:data][0][:shelter_id]
-    user_id = params[:data][0][:user_id]
-    User.find_or_create_by(email: params[:email])
-    UserShelter.create!(user_id: user_id, shelter_id: shelter_id)
+    parsed_params = JSON.parse(params["{\"data\":"].keys[0], symbolize_names: true)
+    shelter_id = parsed_params[:shelter_id]
+    user_id = parsed_params[:user_id]
+    User.find_or_create_by(email: parsed_params[:user_email])
+    Shelter.find_or_create_by(id: shelter_id, name: "Notashelter")
+    UserShelter.create!(user_id: parsed_params[:user_id], shelter_id: parsed_params[:shelter_id])
     render json: { data: { message: "Shelter Saved!" } }, status: 201
   end
 
